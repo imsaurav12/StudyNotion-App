@@ -22,15 +22,18 @@ const SignUpForm = (setIsLoggedIn) => {
         ))
     
     }
-    const [showPassword,setShowPassword] = useState(false);
-    const navigate = useNavigate();
+    ;
+
     function submitHandler(event){
         event.preventDefault();
-        setIsLoggedIn("true");
-        toast.success("Created Account Successfully!");
-        navigate('/dashboard');
+        if(formData.password != formData.confirmPassword){
+            toast.error("Kindly Enter Same Password! ")
+        }
 
     }
+    const [showPassword,setShowPassword] = useState(false);
+    const [showCnfPassword,setCnfShowPassword] = useState(false);
+    
 
   return (
     <div>
@@ -105,7 +108,7 @@ const SignUpForm = (setIsLoggedIn) => {
                         placeholder='Enter Password'
                         />
                         <span onClick={() => setShowPassword((prev) => !prev)}>
-                                {showPassword ? (AiOutlineEye) : (AiOutlineEyeInvisible)}
+                            {showPassword ? (<AiOutlineEyeInvisible/>) : (<AiOutlineEye/>)}
                         </span>
                     </label>
                     <label>
@@ -114,14 +117,14 @@ const SignUpForm = (setIsLoggedIn) => {
                         </p>
                         <input
                         required
-                        type={showPassword ? ("text") : ("password")}
-                        value={formData.password}
+                        type={showCnfPassword ? ("text") : ("password")}
+                        value={formData.confirmPassword}
                         onChange={changeHandler}
                         name='confirmPassword'
                         placeholder='Confirm Password'
                         />
-                        <span onClick={() => setShowPassword((prev) => !prev)}>
-                                {showPassword ? (<AiOutlineEyeInvisible/>) : (<AiOutlineEye/>)}
+                        <span onClick={() => setCnfShowPassword((prev) => !prev)}>
+                                {showCnfPassword ? (<AiOutlineEyeInvisible/>) : (<AiOutlineEye/>)}
                         </span>
                     </label>
             </div>
