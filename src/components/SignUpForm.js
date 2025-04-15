@@ -3,7 +3,9 @@ import {AiOutlineEye,AiOutlineEyeInvisible} from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast'
 
-const SignUpForm = (setIsLoggedIn) => {
+const SignUpForm = ({setIsLoggedIn}) => {
+
+     const navigate = useNavigate();
    
     const[formData,setFormData] = useState({
         firstName:"",
@@ -26,9 +28,20 @@ const SignUpForm = (setIsLoggedIn) => {
 
     function submitHandler(event){
         event.preventDefault();
-        if(formData.password != formData.confirmPassword){
-            toast.error("Kindly Enter Same Password! ")
+        if(formData.password !== formData.confirmPassword){
+            toast.error("Kindly Enter Same Password! ");
+            return;
         }
+        setIsLoggedIn(true);
+        toast.success("Account Created");
+        const accountData={
+            ...formData
+        }
+        console.log("Printing Data");
+        console.log(formData);
+
+        navigate("/dashboard");
+
 
     }
     const [showPassword,setShowPassword] = useState(false);
