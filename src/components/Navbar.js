@@ -7,13 +7,13 @@ const Navbar = (props) => {
   let isLoggedIn = props.isLoggedIn;
   let setIsLoggedIn = props.setIsLoggedIn;
   return (
-    <div className='flex justify-evenly'>
+    <div className='flex justify-between items-center w-11/12 max-w-[1160px] py-4 mx-auto'>
       <Link to="/">
         <img src={logo} alt='logo' width={160} height={32} loading='lazy'></img>
       </Link>
 
       <nav > 
-        <ul className='flex gap-3'>
+        <ul className='flex gap-x-6 text-white '>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -27,25 +27,36 @@ const Navbar = (props) => {
       </nav>
 
       {/* Button- Login,SignUp,Logout,Dashboard */}
-      <div className='flex ml-5 gap-3 mr-3'>
+      <div className='flex items-center gap-x-4'>
         { !isLoggedIn && 
           <Link to='/login'>
-            <button>Log In</button>
+            <button className='bg-emerald-600 hover:bg-emerland-700 text-white py-2 px-4 
+            rounded-lg border border-white/20 hover:border-white transition duration-200'>
+              Log In
+            </button>
           </Link>
         }
         { !isLoggedIn &&
           <Link to='/signup'>
-            <button>Sign Up</button>
+            <button className='bg-emerald-600 hover:bg-emerland-700 text-white py-2 px-4 
+            rounded-lg border border-white/20 hover:border-white transition duration-200'>
+              Sign Up
+            </button>
           </Link>
         }
         { isLoggedIn &&
           <Link to='/dashboard'>
-            <button>Dashboard</button>
+            <button className='bg-emerald-600 hover:bg-emerland-700 text-white py-2 px-4 
+            rounded-lg border border-white/20 hover:border-white transition duration-200'>
+              Dashboard
+            </button>
           </Link>
         }
         { isLoggedIn &&
           <Link to='/'>
-            <button onClick={()=>{
+            <button className='bg-emerald-600 hover:bg-emerland-700 text-white py-2 px-4 
+            rounded-lg border border-white/20 hover:border-white transition duration-200'
+              onClick={()=>{
               setIsLoggedIn(false);
               toast.success("Logged Out")
               }}>
