@@ -53,18 +53,27 @@ const SignUpForm = ({setIsLoggedIn}) => {
     
 
   return (
-    <div>
+    <div className="">
         {/* Student-Instructor Tab */}
 
-        <div class="flex text-white my-6 gap-z-1 bg-richblack-800 p-1 rounded-full max-w-max">
+        <div class="flex bg-richblack-800 p-1 gap-x-1 my-6 rounded-full max-w-max">
   <button
-  onClick={()=> setAccountType("student")}
-   class="px-5 py-2 rounded-full text-sm font-medium bg-yellow-50 text-richblack-900">
+   className={`py-2 px-5 rounded-full transition-all duration-200 ${
+    accountType === "student"
+      ? "bg-yellow-50 text-richblack-900 font-semibold"
+      : "bg-transparent text-richblack-200"
+  }`}
+    onClick={()=> setAccountType("student")}>
     Student
   </button>
   <button
-  onClick={()=>setAccountType("In")}
-   class="px-5 py-2 rounded-full text-sm font-medium text-richblack-200 hover:bg-richblack-700 transition-all duration-200">
+  className={`py-2 px-5 rounded-full transition-all duration-200 ${
+    accountType === "Instructor"
+      ? "bg-yellow-50 text-richblack-900 font-semibold"
+      : "bg-transparent text-richblack-200"
+  }`}
+  onClick={()=>setAccountType("Instructor")}
+   >
     Instructor
   </button>
 </div>
@@ -102,7 +111,7 @@ const SignUpForm = ({setIsLoggedIn}) => {
                 </label>
             </div>
             {/* Email */}
-            <div className='mt-[10px]'>
+            <div className='mt-[20px]'>
                 <label className='w-full'>
                     <p className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>
                         Email Address<sup className='text-pink-200'>*</sup>
@@ -119,7 +128,7 @@ const SignUpForm = ({setIsLoggedIn}) => {
                 </label>
             </div>
             {/* Create Password */}
-            <div className='flex gap-x-4 mt-[10px]'>
+            <div className='flex gap-x-4 mt-[20px]'>
                 <label className='relative w-full'>
                         <p className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] w-full'>
                             Create Password<sup className='text-pink-200'>*</sup>
