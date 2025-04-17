@@ -27,6 +27,8 @@ function submitHandler(event){
     setIsLoggedIn("true");
     toast.success("Logged In Successfully!");
     navigate("/dashboard");
+    console.log("Printing the Form Data")
+    console.log(formData);
 }
 
   return (
