@@ -2,14 +2,18 @@ import React from 'react';
 
 const Dashboard = () => {
   return (
-    <div className="text-white text-center flex flex-col justify-center items-center h-full">
-      <div className="text-3xl mb-4">
-        Welcome to StudyNotion!
-      </div>
+    <div>
+      <div className="min-h-screen bg-richblack-900 flex flex-col justify-center items-center px-4 text-white text-center relative">
+      <h1 className="text-4xl font-bold text-yellow-50 mb-6">
+        Welcome to StudyNotion 👋
+      </h1>
+
       <div className="text-lg">
         Start Your Journey with us for a better tomorrow.
       </div>
     </div>
+    </div>
+    
   );
 };
 
