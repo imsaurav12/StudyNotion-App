@@ -60,7 +60,7 @@ function submitHandler(event){
             onChange={changeHandler}
             name='password'
             placeholder='Enter Password'
-            className='bg-richblack-800 rounded-[0.5rem] text-richblack w-full p-[12px]'
+            className='bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
             />
             <span
             className='absolute right-3 top-[38px] cursor-pointer'

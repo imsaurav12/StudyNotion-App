@@ -91,7 +91,7 @@ const SignUpForm = ({setIsLoggedIn}) => {
                 First Name<sup className='text-pink-200'>*</sup>
             </p>
             <input
-            className='border-r-1 border-b-1 border-white bg-richblack-800 rounded-[0.5rem] text-richblack w-full p-[12px]'
+            className='border-r-1 border-b-1 border-white bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
             required
             type='text'
             value={formData.firstName}
@@ -105,7 +105,7 @@ const SignUpForm = ({setIsLoggedIn}) => {
                 Last Name<sup className='text-pink-200'>*</sup>
             </p>
             <input
-            className='border-r-1 border-b-1 border-white bg-richblack-800 rounded-[0.5rem] text-richblack w-full p-[12px]'
+            className='border-r-1 border-b-1 border-white bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
             required
             type='text'
             value={formData.lastName}
@@ -139,7 +139,7 @@ const SignUpForm = ({setIsLoggedIn}) => {
                             Create Password<sup className='text-pink-200'>*</sup>
                         </p>
                         <input
-                        className='border-r-1 border-b-1 border-white bg-richblack-800 rounded-[0.5rem] text-richblack w-full p-[12px]'
+                        className='border-r-1 border-b-1 border-white bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
                         required
                         type={showPassword ? ("text") : ("password")}
                         value={formData.password}
@@ -160,7 +160,7 @@ const SignUpForm = ({setIsLoggedIn}) => {
                             Confirm Password<sup className='text-pink-200'>*</sup>
                         </p>
                         <input
-                        className='border-r-1 border-b-1 border-white bg-richblack-800 rounded-[0.5rem] text-richblack w-full p-[12px]'
+                        className='border-r-1 border-b-1 border-white bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
                         required
                         type={showCnfPassword ? ("text") : ("password")}
                         value={formData.confirmPassword}

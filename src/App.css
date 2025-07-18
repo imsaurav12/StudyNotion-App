@@ -7,3 +7,7 @@ body {
     overflow-x: hidden;
 }
 
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #ffffff !important;
+}
