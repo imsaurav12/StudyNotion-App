@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/StudyNotion-App/static/css/main.ed8d36cf.css",
-    "main.js": "/StudyNotion-App/static/js/main.3e5f40f7.js",
+    "main.css": "/StudyNotion-App/static/css/main.805c07bd.css",
+    "main.js": "/StudyNotion-App/static/js/main.66352c3b.js",
     "static/media/signup.png": "/StudyNotion-App/static/media/signup.b431d919de01b6515dd6.png",
     "static/media/login.png": "/StudyNotion-App/static/media/login.4d877a447365e5137b67.png",
     "static/media/frame.png": "/StudyNotion-App/static/media/frame.3a238e5f26d676376e1d.png",
-    "static/media/Logo.svg": "/StudyNotion-App/static/media/Logo.0d90853fa1468dbe2d8d82c0ea06b8b1.svg",
+    "static/media/Logo.svg": "/StudyNotion-App/static/media/Logo.fd896773ef070a122541fd8722efa10f.svg",
     "index.html": "/StudyNotion-App/index.html",
-    "main.ed8d36cf.css.map": "/StudyNotion-App/static/css/main.ed8d36cf.css.map",
-    "main.3e5f40f7.js.map": "/StudyNotion-App/static/js/main.3e5f40f7.js.map"
+    "main.805c07bd.css.map": "/StudyNotion-App/static/css/main.805c07bd.css.map",
+    "main.66352c3b.js.map": "/StudyNotion-App/static/js/main.66352c3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed8d36cf.css",
-    "static/js/main.3e5f40f7.js"
+    "static/css/main.805c07bd.css",
+    "static/js/main.66352c3b.js"
   ]
 }
