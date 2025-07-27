@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/UpSkillr-An-Edtech-Platform/static/css/main.805c07bd.css",
-    "main.js": "/UpSkillr-An-Edtech-Platform/static/js/main.fe781031.js",
+    "main.js": "/UpSkillr-An-Edtech-Platform/static/js/main.5806e46c.js",
     "static/media/signup.png": "/UpSkillr-An-Edtech-Platform/static/media/signup.b431d919de01b6515dd6.png",
     "static/media/login.png": "/UpSkillr-An-Edtech-Platform/static/media/login.4d877a447365e5137b67.png",
     "static/media/frame.png": "/UpSkillr-An-Edtech-Platform/static/media/frame.3a238e5f26d676376e1d.png",
     "static/media/Logo.svg": "/UpSkillr-An-Edtech-Platform/static/media/Logo.fd896773ef070a122541fd8722efa10f.svg",
     "index.html": "/UpSkillr-An-Edtech-Platform/index.html",
     "main.805c07bd.css.map": "/UpSkillr-An-Edtech-Platform/static/css/main.805c07bd.css.map",
-    "main.fe781031.js.map": "/UpSkillr-An-Edtech-Platform/static/js/main.fe781031.js.map"
+    "main.5806e46c.js.map": "/UpSkillr-An-Edtech-Platform/static/js/main.5806e46c.js.map"
   },
   "entrypoints": [
     "static/css/main.805c07bd.css",
-    "static/js/main.fe781031.js"
+    "static/js/main.5806e46c.js"
   ]
 }
